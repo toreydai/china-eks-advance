@@ -186,3 +186,4 @@ GPU 节点、OpenSearch 域、NAT 网关、ALB/NLB、EMR virtual cluster、Kubec
 | Lab09 OpenSearch | OpenSearch 域（多 AZ 存储） |
 | Lab10 集群升级 | 临时升级测试集群 |
 | Lab12 Istio | Ingress Gateway NLB/ELB |
+| Lab14 Custom Networking | 独立集群 `eks-custom-net-demo`（2 节点） |

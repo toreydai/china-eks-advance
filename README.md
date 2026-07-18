@@ -14,6 +14,8 @@
 - [Lab01 — EKS Auto Mode 深度演示](docs/lab01-eks-auto-mode.md)
 - [Lab02 — 多集群管理（ArgoCD Hub-Spoke）](docs/lab02-multi-cluster-argocd.md)
 - [Lab11 — Kyverno 策略治理](docs/lab11-kyverno.md)
+- [Lab13 — ServiceAccount 长期 Token 访问 EKS：一个安全权衡案例](docs/lab13-serviceaccount-token.md)
+- [Lab14 — 把已有节点组从默认 ENI 切换到 VPC CNI Custom Networking](docs/lab14-vpc-cni-custom-networking.md)
 
 ### 2. 成本、流量入口与交付
 
@@ -98,6 +100,8 @@
 | Lab06 Spark on EKS | EMR on EKS 中国区可用；官方 Spark 镜像不含 hadoop-aws jar，见 `docs/lab06-spark-on-eks.md` 已知限制 |
 | Lab09 OpenSearch | OpenSearch 域创建约 10-15 分钟且持续计费 |
 | Lab12 Istio | 建议在共享集群或独立 namespace 中执行；可选 Lab，非主线必修 |
+| Lab13 SA Token | 会在共享集群 `adv-shared` 上创建绑定 `cluster-admin` 的永不过期 Token，验证完必须立即清理，不要留在共享集群过夜 |
+| Lab14 Custom Networking | 需要独立经典托管节点组集群 `eks-custom-net-demo`，不能在 Auto Mode 的 `adv-shared` 上跑 |
 
 ---
 
